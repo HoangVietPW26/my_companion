@@ -6,7 +6,7 @@ def is_even_day():
     """Kiểm tra xem hôm nay có phải ngày chẵn trong tuần không (thứ 2, 4, 6)"""
     today = datetime.datetime.now().weekday()
     # 0 = thứ 2, 2 = thứ 4, 4 = thứ 6 (đều là ngày chẵn)
-    return today in [0, 2, 4]
+    return today in [1, 3, 5]
 
 def send_reminder():
     """Gửi email nhắc nhở nếu hôm nay là ngày chẵn"""
